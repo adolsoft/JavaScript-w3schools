@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Merhaba ahmet. Nasilsin"
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Demo in Head</h2>
+    <p id = "demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it / dene</button>
+    
+    <h2>Demo JavaScript in Body</h2>
+
+    <button type="button" onclick="myFunctionBody()">Try it / dene</button>
+    <p id="demo1">B Paragraph</p>
+
+    
+    <h2>Demo External JavaScript</h2>
+
+    <p id="demo2">C Paragraph.</p>
+
+    <button type="button" onclick="myFunction2()">Try it</button>
+
+    <script>
+        function myFunctionBody() {
+          document.getElementById("demo1").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+    <script src="5-myScript.js"></script>
+</body>
+</html>
